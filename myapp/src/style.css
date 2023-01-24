@@ -1,0 +1,19 @@
+.size_button{
+    background-color: black !important;
+    height: 70px;
+    width: 10%;
+    font-size: 32px !important;
+    font-family: 'Amiko', sans-serif!important;
+}
+
+.img_acc {
+    background-image:url("image/img/DESIGN\ DE\ FOND.svg") ;
+    background-repeat: no-repeat;
+    background-size:cover;
+  }
+  
+  .margin_button{
+    margin-top: 35%;
+    padding-bottom: 10%;
+  }
+  

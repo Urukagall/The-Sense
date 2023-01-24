@@ -36,13 +36,3 @@
     transform: rotate(360deg);
   }
 }
-
-.img_acc {
-  background-image:url("image/img/DESIGN\ DE\ FOND.svg") ;
-  background-repeat: no-repeat;
-  background-size:cover;
-}
-
-.margin_button{
-  margin-top: 80%;
-}

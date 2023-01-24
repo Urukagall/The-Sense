@@ -1,15 +1,16 @@
-import logo from './logo.svg';
+import logo from './img/Logo.svg'; 
 import './App.css';
-import SizesExample from './Components/Home.js';
+import Home from './Components/Home.js';
 import './image/img/SENSE.svg';
-import Navbar from './Components/Navbar.js';
+import Barnav from './Components/Navbar.js';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
     <div className="img_acc App">
-      <Navbar />
+      <Barnav />
       <h1> The Sense </h1>
-      <SizesExample />
+      <Home />
     </div>
       
   );

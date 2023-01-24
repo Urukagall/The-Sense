@@ -1,19 +1,22 @@
-function Navbar() {
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <a class="navbar-brand" href="#">
-            <img src="../image/Logo.svg" aria-current="page" alt="Sense" width="30" height="24"/>
-        </a>
-        <div class="container-fluid">
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                <a class="nav-link" href="#">NEWS</a>
-                <a class="nav-link" href="#">NOS EXPÉRIENCES</a>
-                <a class="nav-link" href="#">À PROPOS DE NOUS</a>
-                <a class="nav-link" href="#">NOS ÉQUIPMENTS</a>
-                <a class="nav-link navConnect" href="#">CONNECTION</a>
-            </div>
-            </div>
-        </div>
-    </nav>
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+
+function ColorSchemesExample() {
+  return (
+    <>
+      <Navbar bg="dark" variant="dark">
+        <Container>
+          <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+          <Nav className="me-auto">
+            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#features">Features</Nav.Link>
+            <Nav.Link href="#pricing">Pricing</Nav.Link>
+          </Nav>
+        </Container>
+      </Navbar>
+    </>
+  );
 }
-export default Navbar;
+
+export default ColorSchemesExample;
