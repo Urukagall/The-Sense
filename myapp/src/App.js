@@ -1,6 +1,6 @@
-import logo from 'logo.svg';
-import 'App.css';
-import SizesExample from ';:Components/Home.js';
+import logo from './logo.svg';
+import './App.css';
+import SizesExample from './Components/Home.js';
 import './image/img/SENSE.svg';
 import Navbar from './Components/Navbar.js';
 
