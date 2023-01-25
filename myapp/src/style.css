@@ -6,25 +6,28 @@
 }
 
 .amiko{
-  font-family: 'Amiko', sans-serif!important;
+  font-family: 'Amiko', sans-serif !important;
 }
 
 
 .img_acc {
-    background-image:url("img/DESIGN DE FOND.svg") ;
-    background-repeat: no-repeat;
-    background-size:cover;
-  }
+  background-image:url("img/DESIGN DE FOND.svg") ;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+
   
-  .margin_button{
-    margin-top: 35%;
-    padding-bottom: 10%;
-  }
+.margin_button{
+  margin-top: 13%;
+  padding-bottom: 10%;
+}
   
 .bandeaux{
   background-color: #EAFFFB;
   max-width: 100% !important;
   padding: 2% !important;
+  margin-top: 17%;
 }
 
 .background{
@@ -32,11 +35,18 @@
 }
 
 .LogoSize{
-  width: 100px !important; 
+  width: 80px !important; 
+  margin-left: 20px !important;
 }
 
+.tiltle_color{
+  color: #3B4040;
+  font:bold;
+}
 .text_font{
   font-family: 'Abel', sans-serif;
+  font-size: 20px;
+  text-align: left !important;
 }
 
 .avatar-img {
@@ -44,49 +54,129 @@
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
-  }
+}
   
-  .rounded-circle {
+.rounded-circle {
   border-radius: 50%!important;
-  }
+}
 
-  .avatar-big {
-    height:350px !important;
-    width:350px !important;
-  }
+.avatar-big {
+  height:350px !important;
+  width:350px !important;
+}
 
-  .the_Sense{
-    width: 100px !important;
-    height: 100px !important;
-    margin: 1%;
-    padding-bottom:12px;
-  }
+.the_Sense{
+  width: 100px !important;
+  height: 100px !important;
+  margin: 1%;
+  padding-bottom:12px;
+}
 
-  .flex_Align{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: "0.5rem"
-  }
+.flex_Align{
+  display: flex;
+  align-items: center;
+  vertical-align: center;
+  justify-content: left !important;
+  margin: "0.5rem"
+}
 
-  /* Footer et tout la */
+.discover{
+  font-size: 32px;
+  margin-top: 20px !important;
+}
+.arrow{
+  width: 45px !important;
+  height: 40px ;
+  margin-left: 10px;
+  margin-top: 8px;
+}
 
-  .footer{
-    background-color: #3B4040 !important;
-    padding: 20px;
-  }
+/* Footer et tout la */
 
-  .footerText{
-    color: #82FFE1 !important;
-    font-family: 'Poppins', sans-serif !important;
-    font-size: 10px;
-  }
+.footer{
+  background-color: #3B4040 !important;
+  padding: 20px;
+}
 
-  .poppins{
-    font-family: 'Poppins', sans-serif !important;
-  }
+.footerText{
+  color: #82FFE1 !important;
+  font-family: 'Poppins', sans-serif;
+  font-size: 10px;
+}
 
-  .footerImage{
-    height: 30px;
-    padding-bottom: 10px;
-  }
+.poppins{
+  font-family: 'Poppins', sans-serif;
+  font-size: x-large;
+  margin: 7px;
+}
+
+.footerImage{
+  height: 30px;
+  padding-bottom: 1px;
+}
+
+.vir{
+  margin-top: 20% !important;
+  font-size: 22px;
+}
+
+.amiko.bold {
+  font-weight: bold !important;
+  margin-right: 100px !important;
+}
+
+.pres{
+  background-image: url("./img/BRYCE\ FORME\ \(1\).svg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: top;
+}
+
+.exp{
+  margin: 15%;
+  width: 70%;
+  margin-bottom: 10%;
+  
+}
+
+.nav-link{
+  color: rgb(0, 0, 0) !important;
+  text-transform: uppercase;
+  font-size : 20px !important;
+}
+
+.text_color{
+  color: rgb(0, 0, 0) !important;
+}
+.my_account{
+  margin-top: 10% !important;
+  margin-bottom: 15% !important;
+  font-size: 100px;
+  font-weight: bold;
+  color: #ffffff;
+}
+.img_signup {
+  background-image:url("img/image 42.svg") ;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.create_account{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.card_size{
+  width: 75%;
+}
+.sub_card_size{
+  width: 60%;
+  background-color: #F2F2F2;
+  display: inline-block;
+  padding: 2%;
+}
+
+.background{
+  opacity: 90%;
+  backdrop-filter: blur(5px);
+}

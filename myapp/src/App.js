@@ -1,21 +1,29 @@
-import logo from './img/Logo.svg'; 
 import './App.css';
-import Home from './Components/Home.js';
+import Home from './Pages/Home.js';
 import './img/SENSE.svg';
-import Barnav from './Components/Navbar.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from './Components/Footer.js';
+import Signup from './Pages/Signup';
+import Carousel from './Components/testcarousel.js';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  useParams
+} from "react-router-dom";
 
 function App() {
   return (
-    <div className="img_acc App">
-      <Barnav />
-      <h1> The Sense </h1>
-      <Home />
-      <div>
-        <Footer />
-      </div>
-    </div>
+    <Router>
+      <Switch>
+        <Route exact path="/"> 
+          <Home /> 
+        </Route>
+        <Route exact path="/Signup"> 
+          <Signup /> 
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 

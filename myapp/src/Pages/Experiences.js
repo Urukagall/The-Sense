@@ -6,7 +6,7 @@ import Dark from '../img/DARK ROOM.svg';
 function Experiences() {
     return (
         <div>
-            
+            <p>edcf</p>
         </div>
 
     )

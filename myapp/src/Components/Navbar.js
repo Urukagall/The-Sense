@@ -13,17 +13,22 @@ function ColorSchemesExample() {
       <Navbar className="background" variant="light">
         <Container fluid>
           <Nav className="me-auto">
-          <Navbar.Brand href="#home"><Image src ={Logo} className="LogoSize"></Image></Navbar.Brand>
+          <Navbar.Brand href="/"><Image src ={Logo} className="LogoSize"></Image></Navbar.Brand>
           </Nav >
           
-            <Nav className="me-auto justify-content-end">
+            <Nav className="justify-content-end">
 
+            <Nav.Link href="/Signup" className='amiko'>Signup</Nav.Link>
+            <Nav.Link className='amiko'><p>&#9474;</p></Nav.Link>
             <Nav.Link href="#news" className='amiko'>News</Nav.Link>
+            <Nav.Link className='amiko'><p>&#9474;</p></Nav.Link>
             <Nav.Link href="#experience" className='amiko'>Nos Expériences</Nav.Link>
-            <Nav.Link href="#propos" className='amiko'>A propos de nous</Nav.Link>
-            <Nav.Link href="#equipement" className='amiko'>Nos Equipements</Nav.Link>
-            <Nav.Link href="#connexion" className='amiko'>Connexion</Nav.Link>
-
+            <Nav.Link className='amiko'><p>&#9474;</p></Nav.Link>
+            <Nav.Link href="#about" className='amiko'>À propos de nous</Nav.Link>
+            <Nav.Link className='amiko'><p>&#9474;</p></Nav.Link>
+            <Nav.Link href="#equipement" className='amiko'>Nos Équipements</Nav.Link>
+            <Nav.Link className='amiko'><p>&#9474;</p></Nav.Link>
+            <Nav.Link href="#connection" className='amiko bold'>Connexion</Nav.Link>
             </Nav>
           
           
