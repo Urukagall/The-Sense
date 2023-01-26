@@ -18,8 +18,14 @@ import { useState } from "react";
 import Axios from "axios";
 import Footer from '../Components/Footer';
 import Img1 from '../img/image 45.svg';
+import Img2 from '../img/image 2.svg';
+import Img3 from '../img/image 3.svg';
+import Img4 from '../img/image_crea.png';
+import Img5 from '../img/image 8.svg';
+import Img6 from '../img/image 9.svg';
 import Card from 'react-bootstrap/Card';
 import Reserver from '../img/Bouton réserver.svg'
+import Reservation from '../img/RESERVER.svg'
 
 function Home() {
 
@@ -38,8 +44,8 @@ function Home() {
         <p>QUAND LE VIRTUEL DEVIENT RÉEL</p>
       </div>
         <div className="mb-2 margin_button ">
-          <Button className='size_button amiko' variant='dark'>
-            Découvrir
+          <Button href="#decouvrir" className='size_button amiko' variant='dark'>
+            DÉCOUVRIR
           </Button>
       
         </div>
@@ -56,7 +62,7 @@ function Home() {
             </div>
           );
         })}
-        <Container className='bandeaux'>
+        <Container id="decouvrir" className='bandeaux'>
         <Row >
             <Col className='avatar-big'>
             <img src={Trailer} className='avatar-img rounded-circle'/>
@@ -112,6 +118,128 @@ function Home() {
           </p>
           <img src={Reserver} />
         </div>
+        <img src={Img2} className='card_size'/>
+        <div className='sub_card_size'>
+          <div className='flex_Align'>
+          <h2>THE CONJURING EXPERIENCE | </h2>
+          <h2 className='poppins'> DARK ROOM</h2>
+          </div>
+          <p className='poppins int_18'>Expérience interdit au -18</p>
+          <p className='text_font'>Revivez l'histoire d'un chef d'oeuvre cinématographique
+          au travers d'un expérience aussi bien réaliste qu'immersive. Rassemblez ce qu'il
+          vous reste de courage, les inspecteurs Ed et Loren Warren ont besoin de vous. Un malheur hante la maison de ces derniers
+          et vous ne pouvez pas vous en échapper sans sacrifices. Serez-vous à la hauteur de ce qui vous attend? 
+          Bonne chance, vous en aurez besoin!
+          </p>
+          <img src={Reserver} />
+        </div>
+        <img src={Img3} className='card_size'/>
+        <div className='sub_card_size'>
+          <div className='flex_Align'>
+          <h2>ULTIMATE FIGHT | </h2>
+          <h2 className='poppins'> BATTLE ROOM</h2>
+          </div>
+          <p className='text_font'>Sentez votre coeur battre, votre souffle se couper, votre concentration monter… 
+          Enrôler des joueurs, formez votre équipe et préparez vous au combat !
+           Arrachez la victoire à vos adversaires à travers une bataille dans des décors et des “maps” des plus immersives.
+            En équipe de 4 ou 5 voyez lesquels vous sont digne de remporter le trophée.
+          </p>
+          <img src={Reserver} />
+        </div>
+        <img src={Img4} className='card_size'/>
+        <div className='sub_card_size'>
+          <div className='flex_Align'>
+          <h2>CRÉEZ VOTRE PROPRE ÉXPERIENCE | </h2>
+          <h2 className='poppins'> CREATIVE ROOM</h2>
+          </div>
+          <p className='text_font'>Vous en avez marre des expériences répétitives ! Vous êtes à la recherche d’une toute nouvelle expérience en réalité virtuelle ? 
+            Alors venez créer votre propre expérience avec notre tout nouveau système de création virtuelle ! 
+              Vous nous exposez votre idée et votre univers et nous le mettons en oeuvre rien que pour vous ! 
+                N’attendez plus, c’est désormais votre création, votre univers, votre éxpérience, votre SENSE !
+          </p>
+          <img src={Reserver} />
+        </div>
+        <div className='reservation'>
+          <img src={Reservation} className='img_reserv'/>
+          <p className='reserv_font'>N'ATTTENDEZ PLUS, RÉSERVEZ</p>
+          <p className='tarif'>NOS TARIFS</p>
+          <p className='vt'>Voir les tarifs pour</p>
+          <p className='vt2'>(Max 8 joueurs)</p>
+          <div className='flex'>
+          <img src={Dark} className='droom'/>
+          <img src={Light} className='room'/>
+          <img src={Battle} className='room'/>
+          <img src={Creative} className='room'/>
+          </div>
+          <div className='flex'>
+            <div className='flex_Align'>
+            <p className='ttarif'>DE 10H À 18H : 15€ / </p>
+            <p className='pers'>Personne</p>
+            </div>
+            <div className='flex_Align'>
+            <p className='ttarif'>DE 10H À 18H : 15€ / </p>
+            <p className='pers'>Personne</p>
+            </div>
+            <div className='flex_Align'>
+            <p className='ttarif'>DE 10H À 18H : 15€ / </p>
+            <p className='pers'>Personne</p>
+            </div>
+            <div className='flex_Align'>
+            <p className='ttarif'>DE 10H À 18H : 15€ / </p>
+            <p className='pers'>Personne</p>
+            </div>
+          </div>
+          <div className='flex'>
+            <div className='flex_Align'>
+            <p className='ttarif'>DE 18H À 21H : 18€ / </p>
+            <p className='pers'>Personne</p>
+            </div>
+            <div className='flex_Align'>
+            <p className='ttarif'>DE 18H À 21H : 18€ / </p>
+            <p className='pers'>Personne</p>
+            </div>
+            <div className='flex_Align'>
+            <p className='ttarif'>DE 18H À 21H : 18€ / </p>
+            <p className='pers'>Personne</p>
+            </div>
+            <div className='flex_Align'>
+            <p className='ttarif'>DE 18H À 21H : 18€ / </p>
+            <p className='pers'>Personne</p>
+            </div>
+          </div>
+        </div>
+        
+          <Row>
+            <Col>
+              <img src={Img5} classname='card_size'/>
+              <div classname='smol_sub_card_size'>
+                <div className='flex_Align'>
+                <h2>ÉVÉNEMENT : LA CHASSE À L'OEUF</h2>
+                </div>
+                <p className='text_font'> Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodo consequat. 
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatu. 
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <img src={Reserver} />
+              </div>
+            </Col>
+            <Col>
+              <img src ={Img6} classname='card-size' />
+              <div classname='smol_sub_card_size' />
+                <div className='flex_Align'>
+                <h2>CRÉEZ VOTRE PROPRE ÉXPERIENCE | </h2>
+                <h2 className='poppins'> CREATIVE ROOM</h2>
+                </div>
+                <p className='text_font'>Vous en avez marre des expériences répétitives ! Vous êtes à la recherche d’une toute nouvelle expérience en réalité virtuelle ? 
+                  Alors venez créer votre propre expérience avec notre tout nouveau système de création virtuelle ! 
+                    Vous nous exposez votre idée et votre univers et nous le mettons en oeuvre rien que pour vous ! 
+                      N’attendez plus, c’est désormais votre création, votre univers, votre éxpérience, votre SENSE !
+                </p>
+                <img src={Reserver} />
+            </Col>
+          </Row>
         <Footer/>
       </div>
     

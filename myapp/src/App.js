@@ -11,20 +11,30 @@ import {
   Route,
   useParams
 } from "react-router-dom";
+import Experiences from './Pages/Experiences';
+import About from "./Pages/About";
 
 function App() {
   return (
-    <Router>
-      <Switch>
-        <Route exact path="/"> 
-          <Home /> 
-        </Route>
-        <Route exact path="/Signup"> 
-          <Signup /> 
-        </Route>
-      </Switch>
-    </Router>
+      <Router>
+        <Switch>
+          <Route exact path="/"> 
+            <Home /> 
+          </Route>
+          <Route exact path="/Signup"> 
+            <Signup /> 
+          </Route>
+          <Route exact path="/Experiences"> 
+            <Experiences /> 
+          </Route>
+          <Route exact path="/About"> 
+            <About /> 
+          </Route>
+        </Switch>
+      </Router>
   );
 }
 
 export default App;
+
+//
