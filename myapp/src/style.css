@@ -1,8 +1,9 @@
 .size_button{
     background-color: black !important;
-    height: 70px;
-    width: 10%;
-    font-size: 32px !important;
+    height: 51px;
+    width: 13%;
+    font-size: 28px !important;
+    text-align: center !important;
 }
 
 .amiko{
@@ -42,6 +43,7 @@
 .tiltle_color{
   color: #3B4040;
   font:bold;
+  text-transform: uppercase;
 }
 .text_font{
   font-family: 'Abel', sans-serif;
@@ -75,9 +77,8 @@
 .flex_Align{
   display: flex;
   align-items: center;
-  vertical-align: center;
   justify-content: left !important;
-  margin: "0.5rem"
+  margin: 2px;
 }
 
 .discover{
@@ -170,13 +171,134 @@
   width: 75%;
 }
 .sub_card_size{
-  width: 60%;
+  width: 65%;
   background-color: #F2F2F2;
   display: inline-block;
   padding: 2%;
+  margin-bottom: 3%;
+}
+
+.smol_sub_card_size{
+  width: 30%;
+  background-color: #F2F2F2;
+  display: inline-block;
+  padding: 2%;
+  margin-bottom: 3%;
 }
 
 .background{
   opacity: 90%;
   backdrop-filter: blur(5px);
+}
+
+.int_18{
+  color: red !important;
+  padding-top: 0px !important;
+  display: flex;
+  justify-content: left !important;
+  font-size: 20px !important;
+  margin-bottom: 8px !important;
+}
+
+.reservation{
+  background-color: #000000;
+  background-image: url('./img/image 7.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.img_reserv{
+  padding-top: 4%;
+}
+
+.reserv_font{
+  font-size: 55px;
+  font-weight: 50;
+  color: #FFFFFF ;
+  font-family: 'Poppins', sans-serif;
+}
+
+.tarif{
+  background:-webkit-linear-gradient(top, #82FFE1 35%, #FFFFFF 65%);
+  background-clip:text;
+  -webkit-background-clip:text;
+  color:transparent;
+  font-size: 55px;
+  font-weight: 80;
+  font-family: 'Amiko', sans-serif;
+  margin-top: 4%;
+}
+
+.smallDark{
+  color: transparent;
+  background:-webkit-linear-gradient(top, #000000 10%, #430000 90%);
+  width: 150px;
+}
+
+.smallBattle{
+  width: 150px;
+}
+
+.smallCreative{
+  width: 300px;
+}
+
+div.Experiences.row{
+  margin-top: 100px !important;
+}
+
+.vt{
+  color: #FFFFFF;
+  font-size: 30px;
+  font-family: 'poppins',sans-serif;
+  margin-bottom: 0px !important;
+}
+.vt2{
+  color: #FFFFFF;
+  font-size: 20px;
+  font-family: 'poppins',sans-serif;
+}
+
+.experiencesDiv{
+  background-image: url('./img/Vector 78.svg');
+  background-repeat: no-repeat;
+}
+
+.lightExperience{
+  padding-top: 150px;
+}
+
+.room{
+  height: 150px;
+  width: 150px;
+  filter: invert();
+}
+.droom{
+  height: 150px;
+  width: 150px;
+}
+
+.flex{
+  display: flex;
+  margin-right: 8%;
+  margin-left: 8%;
+  justify-content: space-around;
+}
+
+.bandeauxExperiences{
+  background-color: #EAFFFB;
+  max-width: 100% !important;
+  padding: 2% !important;
+}
+.pers{
+  color: red;
+  font-size: 15px;
+}
+.ttarif{
+  color: white;
+  font-size: 18px;
+}
+
+.margin_about{
+  margin-top: 100px;
 }
