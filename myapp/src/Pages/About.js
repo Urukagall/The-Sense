@@ -39,7 +39,7 @@ function About() {
   return (
     <div className="App img_acc">
     <Barnav />
-        <div className="mb-2 margin_button margin_about">
+        <div className="mb-2 margin_button">
           <Button href="#decouvrir" className='size_button amiko' variant='dark'>
             DÉCOUVRIR
           </Button>
