@@ -8,6 +8,17 @@
 
 .amiko{
   font-family: 'Amiko', sans-serif !important;
+  font-size: 23px;
+}
+
+.abel{
+  font-family: 'Abel', sans-serif !important;
+}
+
+.poppinsExtraLight{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+  font-size: 23px;
 }
 
 
@@ -21,14 +32,14 @@
   
 .margin_button{
   margin-top: 13%;
-  padding-bottom: 10%;
+  /* padding-bottom: 10%; */
 }
   
 .bandeaux{
   background-color: #EAFFFB;
   max-width: 100% !important;
   padding: 2% !important;
-  margin-top: 17%;
+  margin-top: 12%;
 }
 
 .background{
@@ -52,10 +63,15 @@
 }
 
 .avatar-img {
-  width: 55%;
+  width: 50%;
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
+}
+
+.avatar-img-moche {
+  width: 40%;
+  height: 100%;
 }
   
 .rounded-circle {
@@ -123,7 +139,6 @@
 
 .amiko.bold {
   font-weight: bold !important;
-  margin-right: 100px !important;
 }
 
 .pres{
@@ -170,20 +185,37 @@
 .card_size{
   width: 75%;
 }
+
+.card_size_viking{
+  width: 75%;
+  border-radius: 10px 10px 10px 10px;
+}
+
 .sub_card_size{
   width: 65%;
-  background-color: #F2F2F2;
+  background-color: rgba(206, 206, 206, 0.769);
   display: inline-block;
   padding: 2%;
   margin-bottom: 3%;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.sub_card_size_light{
+  width: 65%;
+  background-color: #EAFEFF;
+  display: inline-block;
+  padding: 2%;
+  margin-bottom: 3%;
+  border-radius: 0px 0px 10px 10px;
 }
 
 .smol_sub_card_size{
-  width: 30%;
-  background-color: #F2F2F2;
+  width: 38%;
+  background-color: rgba(206, 206, 206, 0.769);
   display: inline-block;
   padding: 2%;
   margin-bottom: 3%;
+  border-radius: 0px 0px 10px 10px;
 }
 
 .background{
@@ -225,8 +257,9 @@
   color:transparent;
   font-size: 55px;
   font-weight: 80;
-  font-family: 'Amiko', sans-serif;
   margin-top: 4%;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
 }
 
 .smallDark{
@@ -262,6 +295,7 @@ div.Experiences.row{
 .experiencesDiv{
   background-image: url('./img/Vector 78.svg');
   background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .lightExperience{
@@ -297,4 +331,60 @@ div.Experiences.row{
 .ttarif{
   color: white;
   font-size: 18px;
+}
+
+.vect35{
+  background-image: url('./img/Vector 35.svg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+ .news{
+  text-align: left;
+  padding-top: 1% !important;
+  padding-bottom: 1% !important;
+  padding-left: 13% !important;
+ }
+
+ .navbar-brand{
+  padding-bottom : 0% !important;
+ }
+
+ #connection_modal{
+  margin-right: 100px !important;
+ }
+
+ .decouvrir{
+  margin-top: 40%;
+ }
+
+.barreReservation{
+  width: 125px;
+  padding-top: 0px;
+  margin-top: 0px;
+  padding-bottom: 10px;
+}
+
+.progres{
+  width:45%;
+  height:25%;
+  margin-bottom: 10%;
+}
+
+.mag{
+  width:17%;
+  height:37%;
+  margin-bottom: 5%;
+}
+
+.img_about{
+  background-image: url("./img/bgAbout.png");
+  background-repeat: no-repeat;
+  background-size:100%;
+  background-position: top;
+}
+
+.img_experience_2{
+  background-image: url("./img/TRUC\ COOL.svg");
+  background-repeat: no-repeat;
+  background-size:100%;
 }

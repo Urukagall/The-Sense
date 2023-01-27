@@ -2,12 +2,12 @@ import Button from 'react-bootstrap/Button';
 import '../style.css';
 import React, { useEffect } from 'react';
 import TheSense from '../img/SENSE.svg';
-import Trailer from '../img/image 42.svg';
+import Trailer from '../img/dragon.png';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Arrow from '../img/arrow.png'
-import Carousel from '../Components/testcarousel.js';
+import Carousel from 'react-bootstrap/Carousel';
 import Battle from '../img/BATTLE ROOM.svg';
 import Creative from '../img/CREATIVE.svg';
 import Light from '../img/LIGHT ROOM.svg';
@@ -23,9 +23,13 @@ import Img3 from '../img/image 3.svg';
 import Img4 from '../img/image_crea.png';
 import Img5 from '../img/image 8.svg';
 import Img6 from '../img/image 9.svg';
+import Img7 from '../img/Logo_Journal_Progres.png';
+import Img8 from '../img/Lyonmag.png';
+import Barre from '../img/barre.png';
 import Card from 'react-bootstrap/Card';
 import Reserver from '../img/Bouton réserver.svg'
 import Reservation from '../img/RESERVER.svg'
+import Cookies from 'js-cookie'
 
 function Home() {
 
@@ -43,13 +47,13 @@ function Home() {
       <div className='vir'>
         <p>QUAND LE VIRTUEL DEVIENT RÉEL</p>
       </div>
-        <div className="mb-2 margin_button ">
+        <div className="margin_button ">
           <Button href="#decouvrir" className='size_button amiko' variant='dark'>
             DÉCOUVRIR
           </Button>
       
         </div>
-        <button onClick={getUsers}>Show Employees</button>
+        {/* <button onClick={getUsers}>Show Employees</button> */}
         {usersList.map((val, key) => {
           return (
             <div className="employee">
@@ -65,7 +69,7 @@ function Home() {
         <Container id="decouvrir" className='bandeaux'>
         <Row >
             <Col className='avatar-big'>
-            <img src={Trailer} className='avatar-img rounded-circle'/>
+            <img src={Trailer} className='avatar-img-moche'/>
             </Col>
             <Col >
               <Row>
@@ -76,9 +80,10 @@ function Home() {
                 </div>
               </Row>
               <Row>
-                <p className='text_font flex_Align'>Préparez-vous pour une expérience unique qui vous emmenera dans un autre univers. Vivez vos émotions comme vous ne l'avez jamais fait auparavant.
-                    Avec THE SENSE explorez d'autres dimensions et vivez l'impossible en interragissant avec un environnement dynamique et virtuel.
-                    Ce n'est pas une expérience en réalité virtuelle que vous vivez, c'est la réalité.
+                <p className='text_font flex_Align'>Préparez-vous pour une expérience unique qui vous emmenera 
+                dans un autre univers. Vivez vos émotions comme vous ne l'avez jamais fait auparavant. 
+                Avec THE SENSE explorez d'autres dimensions et vivez l'impossible en interragissant avec 
+                un environnement dynamique et virtuel. Ce n'est pas une expérience en réalité virtuelle que vous vivez, c'est la réalité.
                 </p>
               </Row>
               <Row>
@@ -161,10 +166,17 @@ function Home() {
         </div>
         <div className='reservation'>
           <img src={Reservation} className='img_reserv'/>
-          <p className='reserv_font'>N'ATTTENDEZ PLUS, RÉSERVEZ</p>
-          <p className='tarif'>NOS TARIFS</p>
+          <p className='reserv_font'>N'ATTENDEZ PLUS, RÉSERVEZ</p>
+          <p className='tarif abel'>NOS TARIFS</p>
+          <img src={Barre} className="barreReservation"/>
           <p className='vt'>Voir les tarifs pour</p>
           <p className='vt2'>(Max 8 joueurs)</p>
+          <Button size='lg'>
+            -
+          </Button>
+          <Button size='lg'>
+            +
+          </Button>
           <div className='flex'>
           <img src={Dark} className='droom'/>
           <img src={Light} className='room'/>
@@ -173,73 +185,95 @@ function Home() {
           </div>
           <div className='flex'>
             <div className='flex_Align'>
-            <p className='ttarif'>DE 10H À 18H : 15€ / </p>
-            <p className='pers'>Personne</p>
+            <p className='ttarif abel'>DE 10H À 18H : 15€ / </p>
+            <p className='pers poppinsExtraLight'>Personne</p>
             </div>
             <div className='flex_Align'>
-            <p className='ttarif'>DE 10H À 18H : 15€ / </p>
-            <p className='pers'>Personne</p>
+            <p className='ttarif abel'>DE 10H À 18H : 15€ / </p>
+            <p className='pers poppinsExtraLight'>Personne</p>
             </div>
             <div className='flex_Align'>
-            <p className='ttarif'>DE 10H À 18H : 15€ / </p>
-            <p className='pers'>Personne</p>
+            <p className='ttarif abel'>DE 10H À 18H : 15€ / </p>
+            <p className='pers poppinsExtraLight'>Personne</p>
             </div>
             <div className='flex_Align'>
-            <p className='ttarif'>DE 10H À 18H : 15€ / </p>
-            <p className='pers'>Personne</p>
+            <p className='ttarif abel'>DE 10H À 18H : 15€ / </p>
+            <p className='pers poppinsExtraLight '>Personne</p>
             </div>
           </div>
           <div className='flex'>
             <div className='flex_Align'>
-            <p className='ttarif'>DE 18H À 21H : 18€ / </p>
-            <p className='pers'>Personne</p>
+            <p className='ttarif abel'>DE 18H À 21H : 18€ / </p>
+            <p className='pers poppinsExtraLight'>Personne</p>
             </div>
             <div className='flex_Align'>
-            <p className='ttarif'>DE 18H À 21H : 18€ / </p>
-            <p className='pers'>Personne</p>
+            <p className='ttarif abel'>DE 18H À 21H : 18€ / </p>
+            <p className='pers poppinsExtraLight'>Personne</p>
             </div>
             <div className='flex_Align'>
-            <p className='ttarif'>DE 18H À 21H : 18€ / </p>
-            <p className='pers'>Personne</p>
+            <p className='ttarif abel'>DE 18H À 21H : 18€ / </p>
+            <p className='pers poppinsExtraLight'>Personne</p>
             </div>
             <div className='flex_Align'>
-            <p className='ttarif'>DE 18H À 21H : 18€ / </p>
-            <p className='pers'>Personne</p>
+            <p className='ttarif abel'>DE 18H À 21H : 18€ / </p>
+            <p className='pers poppinsExtraLight'>Personne</p>
             </div>
           </div>
         </div>
+        <div className='vect35'>
+        <div>
+          <h2 className='news amiko bold'>
+            Les News du mois
+          </h2>
+        </div>
+          <div className='flex'>
+            <img src={Img5} classname='card_size'/>
+            <img src ={Img6} classname='card-size' />
+          </div>
+          <div className='flex'>
+            <div className='smol_sub_card_size'>
+              <h3 className='amiko bold'>ÉVÉNEMENT : DE L'AMOUR DANS L'AIR</h3>
+              <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad 
+              minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+               ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+               voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur 
+               sint occaecat cupidatat non proident, 
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+            <div className='smol_sub_card_size'>
+              <h3 className='amiko bold'>UN NOUVEL ÉQUIPEMENT ARRIVE !</h3>
+              <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
+              do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+              pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa 
+              qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+          </div>
+              
+        </div>
         
-          <Row>
-            <Col>
-              <img src={Img5} classname='card_size'/>
-              <div classname='smol_sub_card_size'>
-                <div className='flex_Align'>
-                <h2>ÉVÉNEMENT : LA CHASSE À L'OEUF</h2>
-                </div>
-                <p className='text_font'> Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodo consequat. 
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatu. 
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <Container id="decouvrir" className='bandeaux'>
+        <Row >
+            <Col className='avatar-big'>
+            <img src={Img7} className='progres'/>
+            <p className='text_font flex_Align'>"C'est la meilleure manière de faire découvrir l'éxpérience VR 
+            à vos enfants et vos grands-parents mais aussi de changer des perpétuels bowlings ou séance de cinéma du week-end"
                 </p>
-                <img src={Reserver} />
-              </div>
             </Col>
-            <Col>
-              <img src ={Img6} classname='card-size' />
-              <div classname='smol_sub_card_size' />
-                <div className='flex_Align'>
-                <h2>CRÉEZ VOTRE PROPRE ÉXPERIENCE | </h2>
-                <h2 className='poppins'> CREATIVE ROOM</h2>
-                </div>
-                <p className='text_font'>Vous en avez marre des expériences répétitives ! Vous êtes à la recherche d’une toute nouvelle expérience en réalité virtuelle ? 
-                  Alors venez créer votre propre expérience avec notre tout nouveau système de création virtuelle ! 
-                    Vous nous exposez votre idée et votre univers et nous le mettons en oeuvre rien que pour vous ! 
-                      N’attendez plus, c’est désormais votre création, votre univers, votre éxpérience, votre SENSE !
-                </p>
-                <img src={Reserver} />
+            <Col >
+            <img src={Img8} className='mag' />
+            <p className='text_font flex_Align'>"Bluffé par la qualité du service, que ce soit l'a  ceuil et la prise en charge du groupe.
+            Quand à l'expérience, rien à dire, c'est une éxpérience unique au monde"</p>
             </Col>
           </Row>
+        </Container>
         <Footer/>
       </div>
     

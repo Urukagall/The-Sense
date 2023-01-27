@@ -15,7 +15,7 @@ function Footer() {
         <Container>
             <Row>
                 {/* Le truc tout a gauche */}
-                <Col sm={3} className="Col-text">
+                <Col sml={3} className="Col-text">
                     <Row>
                         <Col className="footerText">Nous contacter</Col>
                         <Col className="footerText">Reservation</Col>
@@ -24,32 +24,32 @@ function Footer() {
                 </Col>
 
                 {/* Le copyright */}
-                    <Col sm={4} className="Col-text">
+                    <Col sml={4} className="Col-text">
                         <p className="footerText"> &copy; THE SENSE, SAS. Tous droits reserves </p>
                     </Col>
 
                 {/* Le texte a droite */}
-                    <Col sm={3} className="Col-text">
+                    <Col sml={3} className="Col-text">
                         <Row>
                             <Col className="footerText">Modalites</Col>
-                            <Col sm={1} className="footerText">|</Col>
-                            <Col sm={8} className="footerText">Politique de confidentialite</Col>
+                            <Col sml={1} className="footerText">|</Col>
+                            <Col sml={8} className="footerText">Politique de confidentialite</Col>
                         </Row>
                     </Col>
 
                 {/* Les images la */}
-                    <Col sm={2} className="Col-image">
+                    <Col sml={2} className="Col-image">
                         <Row>
-                            <Col sm={3}>
+                            <Col sml={3}>
                                  <img src={ytbSense} className="footerImage" alt="youtube"/> 
                             </Col>
-                            <Col sm={3}>
+                            <Col sml={3}>
                                  <img src={instSense} className="footerImage" alt="instagram"/> 
                             </Col>
-                            <Col sm={3}>
+                            <Col sml={3}>
                                  <img src={twtSense} className="footerImage" alt="twitter"/> 
                             </Col>
-                            <Col sm={3}>
+                            <Col sml={3}>
                                  <img src={fcbkSense} className="footerImage" alt="facebook"/> 
                             </Col>
                         </Row>
