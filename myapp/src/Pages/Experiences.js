@@ -76,15 +76,8 @@ function Experiences() {
                 <div className='exp pres'>
                     <div className='flex_Align'>
                         <h2 className='tiltle_color'>
-                            LA RÉALITÉ À PORTÉE DE MAIN
+                            PRENEZ PART AU VOYAGE
                         </h2>
-                    </div>
-                    <div className='flex_Align'>
-                        <p className='text_font'>
-                            Vous rêvez de voyagez, de frissoner ou tout simplement de vivre une expérience
-                            unique ? Explorez nos univers entre amis ou en famile et franchissez la frontière de la réalité.
-                            Plusieurs dimensions s'offrent à vous, vous donnant accès à de nombreuses expériences.
-                        </p>
                     </div>
                 </div>
                 <img src={Img1} className='card_size' />
