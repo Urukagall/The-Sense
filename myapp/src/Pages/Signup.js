@@ -1,44 +1,84 @@
-import React, { useState } from 'react';
-import Cookies from 'js-cookie'
-import  Axios  from 'axios';
+import "../App.css";
+import { useState } from "react";
+import Axios from "axios";
+import Barnav from '../Components/Navbar.js';
+import Footer from "../Components/Footer";
+import InputGroup from 'react-bootstrap/InputGroup';
+import Form from 'react-bootstrap/Form';
 
+function Signup() {
+  const [prenom, setPrenom] = useState("");
+  const [nom, setNom] = useState(0);
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [wage, setWage] = useState(0);
 
-const Signup = () => {
-   const [email, setEmail] = useState('');
-   const [pwd, setPwd] = useState('');
+  const [newWage, setNewWage] = useState(0);
 
-   const handle = () => {
-    Axios.post("http://localhost:3001/login", {
+  const [employeeList, setEmployeeList] = useState([]);
+
+  const addUsers = () => {
+    Axios.post("http://localhost:3001/createUsers", {
+      prenom: prenom,
+      nom: nom,
       email: email,
-      password: pwd,
-    }).then((response) => {
-      {Cookies.set("password",pwd)}
-      {Cookies.set("email",email)}
-      console.log(Cookies.get)
-    })
-    
-   };
+      password: password,
+    }).then(() => {
+      setEmployeeList([
+        ...employeeList,
+        {
+          prenom: prenom,
+          nom: nom,
+          email: email,
+          password: password,
+        },
+      ]);
+    });
+  };
 
-   return (
-      <div className="App">
-      <h1>Email of the user:</h1>
-      <input
-         placeholder="email"
-         value={email}
-         onChange={(e) => setEmail(e.target.value)}
-      />
-      <h1>Password of the user:</h1>
-      <input
-         type="password"
-         placeholder="Password"
-         value={pwd}
-         onChange={(e) => setPwd(e.target.value)}
-      />
-      <div>
-      <button onClick={handle}>Log In</button>{' '}
+  return (
+    <div className="App img_signup">
+      
+    <Barnav />
+      <div className='my_account amiko'>
+        <p>MON COMPTE</p>
       </div>
+      <p  className="amiko create_account">Créer un compte</p>
+      <div className="information">
+        <InputGroup onChange={(event) => {
+            setNom(event.target.value);
+          }} className="mb-3">
+          <Form.Control
+            placeholder="Nom"
+          />
+        </InputGroup>
+        <InputGroup onChange={(event) => {
+            setPrenom(event.target.value);
+          }} className="mb-3">
+          <Form.Control
+            placeholder="Prenom"
+          />
+        </InputGroup>
+        <InputGroup onChange={(event) => {
+            setEmail(event.target.value);
+          }} className="mb-3">
+          <InputGroup.Text id="basic-addon3">
+            example@gmail.com
+          </InputGroup.Text>
+          <Form.Control id="basic-url" aria-describedby="basic-addon3" />
+        </InputGroup>
+        <InputGroup onChange={(event) => {
+            setPassword(event.target.value);
+          }} className="mb-3">
+          <Form.Control
+            placeholder="Password"
+          />
+        </InputGroup>
+        <button onClick={addUsers}>Signup</button>
       </div>
-   ); 
-};
+      <Footer/>
+    </div>
+  );
+}
 
 export default Signup;

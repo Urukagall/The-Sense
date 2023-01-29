@@ -59,7 +59,6 @@ function Home() {
             <div className="employee">
               <div>
                 <h3>Name: {val.prenom}</h3>
-                {console.log("a")}
                 <h3>Age: {val.nom}</h3>
               </div>
               
