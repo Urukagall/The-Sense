@@ -54,9 +54,9 @@ return(
                         <Col >
                             <Row>
                                 <div className='flex_Align'>
-                                    <h2 className='tiltle_color'>QU'EST CE QUE LA</h2>
+                                    <h2 className='title_color'>QU'EST CE QUE LA</h2>
                                     <img src={Creative} className='crealogo' />
-                                    <h2 className='tiltle_color'>?</h2>
+                                    <h2 className='title_color'>?</h2>
                                 </div>
                             </Row>
                             <Row>
@@ -76,7 +76,7 @@ return(
             <div className='img_experience_2'>
                 <div className='exp2 pres'>
                     <div className='flex_Align'>
-                            <h2 className='tiltle_color'>
+                            <h2 className='title_color'>
                                 VOTRE EXPÉRIENCE ENTRE VOS MAINS
                             </h2>
                         </div>

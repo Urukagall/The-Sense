@@ -44,7 +44,7 @@ function About() {
           <Col >
             <Row>
               <div className='flex_Align'>
-                <h2 className='tiltle_color'>The Sense, une idée inovatrice</h2>
+                <h2 className='title_color'>The Sense, une idée inovatrice</h2>
               </div>
             </Row>
             <Row>
@@ -57,7 +57,7 @@ function About() {
       </Container>
         <div className='exp pres'>
           <div className='flex_Align'>
-          <h2 className='tiltle_color'>
+          <h2 className='title_color'>
             Qui sommes nous ?
           </h2>
           </div>

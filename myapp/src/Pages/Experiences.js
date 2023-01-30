@@ -20,21 +20,13 @@ import { useParams } from 'react-router-dom';
 import Axios from 'axios';
 import { useEffect, useState } from 'react';
 
-console.log(eval('2 + 2'));
-// Expected output: 4
-
-console.log(eval(new String('2 + 2')));
-// Expected output: 2 + 2
-
-console.log(eval('2 + 2') === eval('4'));
-// Expected output: true
-
-console.log(eval('2 + 2') === eval(new String('2 + 2')));
-// Expected output: false
-
 function Experiences() {
+
     const [res, setRes] = useState('');
     const { id } = useParams()
+
+    // Récupération des données de la salle
+
     useEffect(() => {
         Axios.post("http://localhost:3001/getRoom", {
             roomName: id,
@@ -44,28 +36,39 @@ function Experiences() {
     },[]);
     
     return (
-        <div className="App experiencesDiv">
-            {console.log(res.LogoOtherRoom1)}
+        <div className={res.BackgroundTop}>
+
+            {/* BarNav */}
+
             <Barnav />
             <div>
+
+                {/* Affichage des logo des autres sales avec liens intégrer */}
+
                 <Row className='Experiences'>
                     <Col />
                     <Col>
-                        <img className='smallDark' src={Dark} />
+                        <a href={res.LinkOtherRoom1}>
+                        <img className='smallDark' src={res.LogoOtherRoom1} />
+                        </a>
                     </Col>
                     <Col>
-                        <img className='smallBattle' src={Battle} />
+                        <a href={res.LinkOtherRoom2}>
+                        <img className='smallBattle' src={res.LogoOtherRoom2} />
+                        </a>
                     </Col>
                     <Col>
-                        <a href="/Creative">
-                            <img className='smallCreative' src="../../img/CREATIVE.svg" />
+                        <a href={res.LinkOtherRoom3}>
+                            <img className='smallCreative' src={res.LogoOtherRoom3} />
                         </a>
                     </Col>
                     <Col />
                 </Row>
 
+                {/* Logo de la salle */}
+
                 <div>
-                    <img className='lightExperience' src={Light} />
+                    <img className='lightExperience' src={res.LogoRoom} />
                 </div>
 
                 <div className="mb-2 margin_button ">
@@ -74,26 +77,28 @@ function Experiences() {
                     </Button>
                 </div>
 
-                <Container id="decouvrir" className='bandeauxExperiences'>
+                {/* Banniére de la salle */}
+
+                <Container id="decouvrir" className={res.BackgroundBanner}>
                     <Row >
                         <Col className='avatar-big'>
-                            <img src={PhotoMoche} className='avatar-img-moche' />
+                            <img src={res.ImgBanner} className='avatar-img-moche' />
                         </Col>
                         <Col >
                             <Row>
                                 <div className='flex_Align'>
-                                    <h2 className='tiltle_color'>QU'EST CE QUE LA</h2>
-                                    <img src={Light} className='the_Sense' />
-                                    <h2 className='tiltle_color'>?</h2>
+                                    <h2 className={res.ColorTitleBanner}>QU'EST CE QUE LA</h2>
+                                    <img src={res.LogoRoom} className='the_Sense' />
+                                    <h2 className={res.ColorTitleBanner}>?</h2>
                                 </div>
                             </Row>
                             <Row>
-                                <p className='text_font flex_Align'>Voyagez, explorez, découvrez LIGHT ROOM !
-                                    Découvrez des paysages somptueux et des histoires palpitantes dans cette salle
-                                    accessible pour toute la famille. Ici tout n'est qu'affaire d'émotions et de beauté,
-                                    explorez les décors de nos expériences et partez à l'aventure en famille ou entre amis
-                                    a partir de 12 ans. Il ne vous reste plus qu'à franchir le seuil de la LIGHT ROOM et
-                                    à vous laisser transporter dans un voyage époustouflant. Vos émotions n'attendent que vous !
+                                <p className={res.ColorDescRoom}>
+                                    {res.RoomDesc}
+                                </p>
+                                <p className='text_font flex_Align red'>
+                                    {res.RoomAdver}
+                                    
                                 </p>
                             </Row>
                         </Col>
@@ -101,47 +106,58 @@ function Experiences() {
                 </Container>
             </div>
         
-            <div className='img_experience_2'>
+            <div className={res.BackgroundBottom}>
                 <div>
+
+                    {/* Slogan de la salle */}
+
                     <div>
                         <div className='flex_Align'>
-                            <h2 className='tiltle_color exp2'>
-                                PRENEZ PART AU VOYAGE
+                            <h2 className={res.ColorTitleRoom}>
+                                {res.RoomTitle}
                             </h2>
                         </div>
                     </div>
-                    <img src={Img45} className='card_size' />
-                    <div className='sub_card_size_light'>
+                    
+                    {/* Expérienc 1 */}
+
+                    <img src={res.ImgExp1} className='card_size' />
+                    <div className={res.BackgroundCard}>
                         <div className='flex_Align'>
-                            <h2>SHANGRI-LA : LA CITÉ PERDUE DE Z | </h2>
-                            <h2 className='poppins'> LIGHT ROOM</h2>
+                            <h2 className={res.ColorExpName}>{res.ExpName1}</h2>
+                            <h2 className={res.ColorRoomName}>{res.RoomName}</h2>
                         </div>
-                        <p className='text_font'>Shangri-La la cité mythique, symbole de paix, de prospérité
-                            et de magnificience. Personne n'a apparemment pu se rendre en ce lieu
-                            depuis des décennies ou prouver son existence, du moins depuis votre découverte !
-                            Aventurez-vous au plus profond des légendes, entrez dans la cité de Z avec votre équipe et explorez les lieux à la
-                            recherche de Percy Fawcette.
+                        <div>
+                            <p className='text_font red flex_align'>{res.ExpAdver}</p>
+                        </div>
+                        <p className={res.ColorDescRoom}>
+                            {res.ExpDesc1}
                         </p>
-                        <img src={Reserver} />
+                        <img src={res.ImgBouton} />
                     </div>
-                    <img src={Img65} className='card_size_viking' />
-                    <div className='sub_card_size_light'>
+
+                    {/* Expérienc 2 */}
+
+                    <img src={res.ImgExp2} className='card_size_viking' />
+                    <div className={res.BackgroundCard}>
                         <div className='flex_Align'>
-                            <h2>NORDRËNN : LA LEGENDE DE GLACE  | </h2>
-                            <h2 className='poppins'> LIGHT ROOM</h2>
+                            <h2 className={res.ColorExpName}>{res.ExpName2}</h2>
+                            <h2 className={res.ColorRoomName}>{res.RoomName}</h2>
                         </div>
-                        <p className='text_font'>Dans le froid du royaume Nördrenn, il est une légende qui raconte 
-                        comment un guerrier obtint la force de l'ours et la clairvoyance du corbeau. Il est dit que 
-                        pour conquérir la femme qu'il aimait, cet homme partit a la recherche du trône d'Odin, artefact perdu 
-                        depuis des années, qui offrait, disait-on, le Père de Toute Chose. Le guerrier partit et ne revint jamais; 
-                        on raconte qu'il aurait trouvé le trône mais, qu'avide de son pouvoir il ne le quitta plus. 
-                        Partez à la découverte du royaume glacé de Nordrënne et retrouvez le guerrier de la légende.
+                        <div>
+                            <p className='text_font red flex_align'>{res.ExpAdver}</p>
+                        </div>
+                        <p className={res.ColorDescRoom}>
+                            {res.ExpDesc2}
                         </p>
-                        <img src={Reserver} />
+                        <img src={res.ImgBouton} />
                     </div>
 
                 </div>
-                </div>
+            </div>
+
+                {/* Carousel */}
+
                 <Carousel fade>
                     <Carousel.Item>
                     <img
@@ -172,6 +188,9 @@ function Experiences() {
                     </Carousel.Caption>
                     </Carousel.Item>
                 </Carousel>
+
+            {/* Footer */}
+
             <Footer />
         </div>
 

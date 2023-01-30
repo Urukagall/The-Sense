@@ -74,9 +74,9 @@ function Home() {
             <Col >
               <Row>
                 <div className='flex_Align'>
-                  <h2 className='tiltle_color'>QU'EST CE QUE</h2>
+                  <h2 className='title_color'>QU'EST CE QUE</h2>
                   <img src={TheSense} className='the_Sense' />
-                  <h2 className='tiltle_color'>?</h2>
+                  <h2 className='title_color'>?</h2>
                 </div>
               </Row>
               <Row>
@@ -97,7 +97,7 @@ function Home() {
         </Container>
         <div className='exp pres'>
           <div className='flex_Align'>
-          <h2 className='tiltle_color'>
+          <h2 className='title_color'>
             LA RÉALITÉ À PORTÉE DE MAIN
           </h2>
           </div>

@@ -6,6 +6,14 @@
     text-align: center !important;
 }
 
+.red{
+  color: red;
+}
+
+.white{
+  color: white !important;
+}
+
 .amiko{
   font-family: 'Amiko', sans-serif !important;
   font-size: 23px;
@@ -51,7 +59,7 @@
   margin-left: 20px !important;
 }
 
-.tiltle_color{
+.title_color{
   color: #3B4040;
   font:bold;
   text-transform: uppercase;
@@ -214,7 +222,25 @@
   border-radius: 0px 0px 10px 10px;
 }
 
-.sub_card_size_light{
+.sub_card_size_black{
+  width: 65%;
+  background-color: #494949;
+  display: inline-block;
+  padding: 2%;
+  margin-bottom: 3%;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.sub_card_size_cyan{
+  width: 65%;
+  background-color: #CDFFF3;
+  display: inline-block;
+  padding: 2%;
+  margin-bottom: 3%;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.sub_card_size_blue{
   width: 65%;
   background-color: #EAFEFF;
   display: inline-block;
@@ -278,13 +304,14 @@
 
 .smallDark{
   color: transparent;
-  background:-webkit-linear-gradient(top, #000000 10%, #430000 90%);
+  /* background:-webkit-linear-gradient(top, #000000 10%, #430000 90%); */
   width: 150px;
+  fill: red;
 }
 
 .smallBattle{
   width: 150px;
-  padding-top: 15px;
+  /* padding-top: 15px; */
 }
 
 .smallCreative{
@@ -293,7 +320,7 @@
 
 .smallLight{
   width: 150px;
-  padding-top: 25px;
+  /* padding-top: 25px; */
 }
 
 div.Experiences.row{
@@ -316,6 +343,13 @@ div.Experiences.row{
   background-image: url('./img/Vector 78.svg');
   background-repeat: no-repeat;
   background-size: 100%;
+}
+
+.experiencesDivBlack{
+  background-image: url('./img/Vector 78 (1).svg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: #111111;
 }
 
 .lightExperience{
@@ -341,6 +375,22 @@ div.Experiences.row{
 
 .bandeauxExperiences{
   background-color: #EAFFFB;
+  max-width: 100% !important;
+  padding: 2% !important;
+}
+
+.bandeauxExperiencesBlack{
+  background-color: #000000;
+  max-width: 100% !important;
+  padding: 2% !important;
+}
+.bandeauxExperiencesBlue{
+  background-color: #EAFEFF;
+  max-width: 100% !important;
+  padding: 2% !important;
+}
+.bandeauxExperiencesCyan{
+  background-color: #CDFFF3;
   max-width: 100% !important;
   padding: 2% !important;
 }
@@ -413,6 +463,13 @@ div.Experiences.row{
 
 .img_experience_2{
   background-image: url("./img/TRUC\ COOL.svg");
+  background-repeat: no-repeat;
+  background-size:100%;
+  background-position: top;
+}
+
+.img_experience_2_black{
+  background-image: url("./img/TRUC\ COOL (1).svg");
   background-repeat: no-repeat;
   background-size:100%;
   background-position: top;
