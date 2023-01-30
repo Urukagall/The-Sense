@@ -82,7 +82,7 @@ function ColorSchemesExample() {
               <Nav.Link className='amiko'><p>&#9474;</p></Nav.Link>
               <Nav.Link href="#news" className='amiko'>News</Nav.Link>
               <Nav.Link className='amiko'><p>&#9474;</p></Nav.Link>
-              <Nav.Link href="/Experiences" className='amiko'>Nos Expériences</Nav.Link>
+              <Nav.Link href="/Experiences/Light Room" className='amiko'>Nos Expériences</Nav.Link>
               <Nav.Link className='amiko'><p>&#9474;</p></Nav.Link>
               <Nav.Link href="/About" className='amiko'>À propos de nous</Nav.Link>
               <Nav.Link className='amiko'><p>&#9474;</p></Nav.Link>

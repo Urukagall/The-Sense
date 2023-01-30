@@ -90,6 +90,13 @@
   padding-bottom:12px;
 }
 
+.crealogo{
+  width: 200px !important;
+  height: 200px !important;
+  margin: 1%;
+  padding-bottom:4px;
+}
+
 .flex_Align{
   display: flex;
   align-items: center;
@@ -152,6 +159,13 @@
   margin: 15%;
   width: 70%;
   margin-bottom: 10%;
+  
+}
+
+.exp2{
+  margin-left: 10%; 
+  margin-bottom: 5%;
+  margin-top: 5%;
   
 }
 
@@ -270,10 +284,16 @@
 
 .smallBattle{
   width: 150px;
+  padding-top: 15px;
 }
 
 .smallCreative{
   width: 300px;
+}
+
+.smallLight{
+  width: 150px;
+  padding-top: 25px;
 }
 
 div.Experiences.row{
@@ -324,10 +344,18 @@ div.Experiences.row{
   max-width: 100% !important;
   padding: 2% !important;
 }
+
+.bandeauxCreative{
+  background-color: #F2F2F2;
+  max-width: 100% !important;
+  padding: 2% !important;
+}
+
 .pers{
   color: red;
   font-size: 15px;
 }
+
 .ttarif{
   color: white;
   font-size: 18px;
@@ -387,4 +415,21 @@ div.Experiences.row{
   background-image: url("./img/TRUC\ COOL.svg");
   background-repeat: no-repeat;
   background-size:100%;
+  background-position: top;
+}
+
+.compteur{
+  color: #FFFFFF !important;
+  font-size: 30px;
+  font-family: 'poppins',sans-serif;
+}
+
+.denise{
+  width: 55% ;
+  height: 10% ;
+}
+
+.blur_carousel{
+  background-color: rgba(0,0,0, 0.5);
+  margin-bottom: 1%;
 }

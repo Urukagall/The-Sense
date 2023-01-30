@@ -13,6 +13,7 @@ import {
 } from "react-router-dom";
 import Experiences from './Pages/Experiences';
 import About from "./Pages/About";
+import Crea from "./Pages/Creative";
 
 function App() {
   return (
@@ -24,11 +25,14 @@ function App() {
           <Route exact path="/Signup"> 
             <Signup /> 
           </Route>
-          <Route exact path="/Experiences"> 
+          <Route exact path="/Experiences/:id"> 
             <Experiences /> 
           </Route>
           <Route exact path="/About"> 
             <About /> 
+          </Route>
+          <Route exact path="/Creative"> 
+            <Crea /> 
           </Route>
         </Switch>
       </Router>

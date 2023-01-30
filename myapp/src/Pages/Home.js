@@ -30,6 +30,7 @@ import Card from 'react-bootstrap/Card';
 import Reserver from '../img/Bouton réserver.svg'
 import Reservation from '../img/RESERVER.svg'
 import Cookies from 'js-cookie'
+import Compteur from "../Components/Compteur.js"
 
 function Home() {
 
@@ -170,21 +171,16 @@ function Home() {
           <img src={Barre} className="barreReservation"/>
           <p className='vt'>Voir les tarifs pour</p>
           <p className='vt2'>(Max 8 joueurs)</p>
-          <Button size='lg'>
-            -
-          </Button>
-          <Button size='lg'>
-            +
-          </Button>
+          <Compteur/>
           <div className='flex'>
-          <img src={Dark} className='droom'/>
-          <img src={Light} className='room'/>
-          <img src={Battle} className='room'/>
-          <img src={Creative} className='room'/>
+            <img src={Dark} className='droom'/>
+            <img src={Light} className='room'/>
+            <img src={Battle} className='room'/>
+            <img src={Creative} className='room'/>
           </div>
           <div className='flex'>
             <div className='flex_Align'>
-            <p className='ttarif abel'>DE 10H À 18H : 15€ / </p>
+            <p className='ttarif abel'>DE 10H À 18H : 17€ / </p>
             <p className='pers poppinsExtraLight'>Personne</p>
             </div>
             <div className='flex_Align'>
@@ -202,7 +198,7 @@ function Home() {
           </div>
           <div className='flex'>
             <div className='flex_Align'>
-            <p className='ttarif abel'>DE 18H À 21H : 18€ / </p>
+            <p className='ttarif abel'>DE 18H À 21H : 22€ / </p>
             <p className='pers poppinsExtraLight'>Personne</p>
             </div>
             <div className='flex_Align'>
