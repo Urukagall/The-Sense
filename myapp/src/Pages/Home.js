@@ -43,7 +43,7 @@ function Home() {
   };
 
   return (
-    <div className="App img_acc">
+    <div className="App img_acc acceuil-mobile">
     <Barnav />
       <div className='vir'>
         <p>QUAND LE VIRTUEL DEVIENT RÉEL</p>
@@ -54,47 +54,35 @@ function Home() {
           </Button>
       
         </div>
-        {/* <button onClick={getUsers}>Show Employees</button> */}
-        {usersList.map((val, key) => {
-          return (
-            <div className="employee">
-              <div>
-                <h3>Name: {val.prenom}</h3>
-                <h3>Age: {val.nom}</h3>
-              </div>
-              
+        <div id="decouvrir" className='bandeaux'>
+          <div className='acc-pres-thesense'>
+            <div className='item'>
+              <img src={Trailer} className='avatar-img-moche'/>
             </div>
-          );
-        })}
-        <Container id="decouvrir" className='bandeaux'>
-        <Row >
-            <Col className='avatar-big'>
-            <img src={Trailer} className='avatar-img-moche'/>
-            </Col>
-            <Col >
-              <Row>
-                <div className='flex_Align'>
-                  <h2 className='title_color'>QU'EST CE QUE</h2>
+            <div className='item'>
+              <div className=''>
+                <div className='flex_Align center'>
+                  <p className='title_size'>QU'EST CE QUE</p>
                   <img src={TheSense} className='the_Sense' />
-                  <h2 className='title_color'>?</h2>
+                  <p className='title_size'>?</p>
                 </div>
-              </Row>
-              <Row>
-                <p className='text_font flex_Align'>Préparez-vous pour une expérience unique qui vous emmenera 
-                dans un autre univers. Vivez vos émotions comme vous ne l'avez jamais fait auparavant. 
-                Avec THE SENSE explorez d'autres dimensions et vivez l'impossible en interragissant avec 
-                un environnement dynamique et virtuel. Ce n'est pas une expérience en réalité virtuelle que vous vivez, c'est la réalité.
-                </p>
-              </Row>
-              <Row>
-                <div className='flex_Align'>
-                <p className='discover'>DÉCOUVRIR THE SENSE</p>
-                <img src={Arrow} className='arrow' />
+                <div className='center'>
+                  <p className='text_font'>Préparez-vous pour une expérience unique qui vous emmenera 
+                  dans un autre univers. Vivez vos émotions comme vous ne l'avez jamais fait auparavant. 
+                  Avec THE SENSE explorez d'autres dimensions et vivez l'impossible en interragissant avec 
+                  un environnement dynamique et virtuel. Ce n'est pas une expérience en réalité virtuelle que vous vivez, c'est la réalité.
+                  </p>
                 </div>
-              </Row>
-            </Col>
-          </Row>
-        </Container>
+                <div className='center'>
+                  <div className='flex_Align'>
+                    <p className='title_size'>DÉCOUVRIR THE SENSE</p>
+                    <img src={Arrow} className='arrow' />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div className='exp pres'>
           <div className='flex_Align'>
           <h2 className='title_color'>
